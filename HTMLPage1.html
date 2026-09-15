@@ -1,0 +1,2122 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Jualan Akhir Tahun Gereja Baptis Indonesia Cilandak
+    </title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f4ef;
+            color: #333;
+            padding-bottom: 90px;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background: #315747;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 0 0 30px 30px;
+        }
+
+
+            header h1 {
+                font-size: 28px;
+                margin-bottom: 8px;
+            }
+
+
+            header p {
+                font-size: 15px;
+                opacity: 0.9;
+            }
+
+
+        /* =========================
+           CONTAINER
+        ========================= */
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+        }
+
+
+        /* =========================
+           STATUS PO
+        ========================= */
+
+        .po-open,
+        .po-closed {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+
+        .po-open {
+            background: #e5f4ea;
+            color: #245b38;
+        }
+
+
+        .po-closed {
+            background: #f8e7e7;
+            color: #8a2d2d;
+        }
+
+
+            .po-open h2,
+            .po-closed h2 {
+                margin-bottom: 10px;
+            }
+
+
+            .po-closed a {
+                display: inline-block;
+                margin-top: 15px;
+                background: #25D366;
+                color: white;
+                text-decoration: none;
+                padding: 12px 20px;
+                border-radius: 25px;
+                font-weight: bold;
+            }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+
+            .section-title h2 {
+                font-size: 22px;
+            }
+
+
+            .section-title p {
+                color: #777;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+
+
+        /* =========================
+           MENU CARD
+        ========================= */
+
+        .menu-card {
+            background: white;
+            border-radius: 18px;
+            margin-bottom: 18px;
+            overflow: hidden;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+        }
+
+
+            .menu-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                display: block;
+            }
+
+
+        .menu-content {
+            padding: 18px;
+        }
+
+
+        .menu-name {
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+
+        .menu-description {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+
+        .menu-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #315747;
+        }
+
+
+        .menu-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+
+        /* =========================
+           PLUS MINUS
+        ========================= */
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+            .quantity-control button {
+                width: 34px;
+                height: 34px;
+                border: none;
+                border-radius: 50%;
+                background: #315747;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+
+            .quantity-control span {
+                min-width: 20px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+
+        /* =========================
+           CART
+        ========================= */
+
+        .cart {
+            background: white;
+            border-radius: 18px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+        }
+
+
+            .cart h2 {
+                margin-bottom: 15px;
+            }
+
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 19px;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .main-button {
+            width: 100%;
+            border: none;
+            background: #315747;
+            color: white;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+
+            .main-button:hover {
+                opacity: 0.9;
+            }
+
+
+
+        /* =========================
+           CHECKOUT
+        ========================= */
+
+        #checkoutSection {
+            display: none;
+        }
+
+
+        .checkout-box {
+            background: white;
+            padding: 22px;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+
+            .form-group label {
+                display: block;
+                margin-bottom: 7px;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 13px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                font-size: 15px;
+            }
+
+
+            .form-group textarea {
+                min-height: 90px;
+                resize: vertical;
+            }
+
+
+        /* =========================
+           THANK YOU
+        ========================= */
+
+        #thankYouSection {
+            display: none;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+
+        .thank-you-icon {
+            font-size: 65px;
+            margin-bottom: 20px;
+        }
+
+
+        #thankYouSection h1 {
+            color: #315747;
+            margin-bottom: 12px;
+        }
+
+
+        #thankYouSection p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+
+        .order-number {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FLOATING CART
+        ========================= */
+
+        .floating-cart {
+            position: fixed;
+            bottom: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px);
+            max-width: 660px;
+            background: #315747;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 100;
+        }
+
+
+            .floating-cart strong {
+                font-size: 15px;
+            }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 500px) {
+
+            header h1 {
+                font-size: 24px;
+            }
+
+
+            .menu-card img {
+                height: 180px;
+            }
+
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <h1>
+            🍱 Jualan Akhir Tahun
+        </h1>
+
+        <p>
+            Gereja Baptis Indonesia Cilandak
+        </p>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- =========================
+             STATUS PO
+        ========================= -->
+
+        <div id="poStatus"></div>
+
+
+        <!-- =========================
+             MENU SECTION
+        ========================= -->
+
+        <div id="menuSection">
+
+
+            <div class="section-title">
+
+                <h2>
+                    🍴 Menu Minggu Ini
+                </h2>
+
+                <p>
+                    Pilih makanan yang kamu inginkan.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 MENU 1 - RISOL MAYO
+            ========================= -->
+
+            <div class="menu-card">
+
+                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80"
+                     alt="Risol Mayo">
+
+                <div class="menu-content">
+
+                    <div class="menu-name">
+                        Risol Mayo
+                    </div>
+
+                    <div class="menu-description">
+                        Risol crispy dengan isian mayonnaise,
+                        telur dan smoked beef.
+                    </div>
+
+                    <div class="menu-bottom">
+
+                        <div class="menu-price">
+                            Rp4.000
+                        </div>
+
+                        <div class="quantity-control">
+
+                            <button onclick="changeQuantity(0, -1)">
+                                −
+                            </button>
+
+                            <span id="quantity-0">
+                                0
+                            </span>
+
+                            <button onclick="changeQuantity(0, 1)">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 MENU 2 - PISCOK
+            ========================= -->
+
+            <div class="menu-card">
+
+                <img src="https://pin.it/3n1kExMY2"
+                     alt="Piscok">
+
+                <div class="menu-content">
+
+                    <div class="menu-name">
+                        Piscok
+                    </div>
+
+                    <div class="menu-description">
+                        Daging yang dibalur dengan mayonaise
+                        dan kulit yang dibuat pakai adonan
+                        lalu digoreng hingga crispy.
+                    </div>
+
+                    <div class="menu-bottom">
+
+                        <div class="menu-price">
+                            Rp4.000
+                        </div>
+
+                        <div class="quantity-control">
+
+                            <button onclick="changeQuantity(1, -1)">
+                                −
+                            </button>
+
+                            <span id="quantity-1">
+                                0
+                            </span>
+
+                            <button onclick="changeQuantity(1, 1)">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 MENU 3 - NASI AYAM
+            ========================= -->
+
+            <div class="menu-card">
+
+                <img src="https://pin.it/3ecGmonmq"
+                     alt="Nasi Ayam">
+
+                <div class="menu-content">
+
+                    <div class="menu-name">
+                        Nasi Ayam
+                    </div>
+
+                    <div class="menu-description">
+                        Nasi hangat dengan ayam berbumbu
+                        dan pelengkap.
+                    </div>
+
+                    <div class="menu-bottom">
+
+                        <div class="menu-price">
+                            Rp20.000
+                        </div>
+
+                        <div class="quantity-control">
+
+                            <button onclick="changeQuantity(2, -1)">
+                                −
+                            </button>
+
+                            <span id="quantity-2">
+                                0
+                            </span>
+
+                            <button onclick="changeQuantity(2, 1)">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PO KAOS
+            ========================= -->
+
+            <div class="section-title">
+
+                <h2>
+                    👕 PO Kaos Gereja
+                </h2>
+
+                <p>
+                    Pilih ukuran kaos yang kamu inginkan.
+                </p>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <img src="https://drive.google.com/file/d/1BGrsJqg9Vt-cChtUH1_KKvPQYeXmqOIj/view?usp=drive_link"
+                     alt="Kaos Gereja">
+
+                <div class="menu-content">
+
+                    <div class="menu-name">
+                        Kaos Gereja
+                    </div>
+
+                    <div class="menu-description">
+                        Kaos khusus untuk kegiatan gereja.
+                        Pilihan ukuran S, M, L, XL dan XXL.
+                    </div>
+
+                    <div class="menu-price">
+                        Rp100.000
+                    </div>
+
+
+                    <div style="margin-top:15px;">
+
+                        <label>
+                            Ukuran:
+                        </label>
+
+                        <select id="shirtSize"
+                                style="
+                                width:100%;
+                                padding:12px;
+                                margin-top:8px;
+                                border-radius:10px;
+                                border:1px solid #ddd;
+                            ">
+
+                            <option value="S">
+                                S
+                            </option>
+
+                            <option value="M">
+                                M
+                            </option>
+
+                            <option value="L">
+                                L
+                            </option>
+
+                            <option value="XL">
+                                XL
+                            </option>
+
+                            <option value="XXL">
+                                XXL
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="menu-bottom">
+
+                        <div></div>
+
+                        <div class="quantity-control">
+
+                            <button onclick="changeQuantity(3, -1)">
+                                −
+                            </button>
+
+                            <span id="quantity-3">
+                                0
+                            </span>
+
+                            <button onclick="changeQuantity(3, 1)">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 CART
+            ========================= -->
+
+            <div class="cart">
+
+                <h2>
+                    🛒 Keranjang
+                </h2>
+
+                <div id="cartItems">
+
+                    <p style="color:#888;">
+                        Belum ada pesanan.
+                    </p>
+
+                </div>
+
+
+                <div class="cart-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span id="cartTotal">
+                        Rp0
+                    </span>
+
+                </div>
+
+
+                <button class="main-button"
+                        onclick="openCheckout()">
+                    Lanjut ke Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             CHECKOUT
+        ========================= -->
+
+        <div id="checkoutSection">
+
+            <div class="section-title">
+
+                <h2>
+                    📝 Data Pemesan
+                </h2>
+
+                <p>
+                    Silakan isi data di bawah ini.
+                </p>
+
+            </div>
+
+
+            <div class="checkout-box">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Nama
+                    </label>
+
+                    <input type="text"
+                           id="customerName"
+                           placeholder="Masukkan nama kamu">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Nomor WhatsApp
+                    </label>
+
+                    <input type="tel"
+                           id="customerPhone"
+                           placeholder="08xxxxxxxxxx">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Catatan Pesanan
+                    </label>
+
+                    <textarea id="customerNote"
+                              placeholder="Contoh: tidak pedas, dll."></textarea>
+
+                </div>
+
+
+                <h3>
+                    Rincian Pesanan
+                </h3>
+
+
+                <div id="checkoutItems"
+                     style="margin-top:15px;"></div>
+
+
+                <div class="cart-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span id="checkoutTotal">
+                        Rp0
+                    </span>
+
+                </div>
+
+
+                <button class="main-button"
+                        onclick="submitOrder()">
+                    ✅ Konfirmasi Pesanan
+                </button>
+
+
+                <button class="main-button"
+                        onclick="backToMenu()"
+                        style="
+                        background:#eee;
+                        color:#333;
+                    ">
+                    ← Kembali ke Menu
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             THANK YOU
+        ========================= -->
+
+        <div id="thankYouSection">
+
+            <div class="thank-you-icon">
+                🎉
+            </div>
+
+
+            <h1>
+                Terima Kasih!
+            </h1>
+
+
+            <p>
+                Pesanan kamu sudah berhasil dibuat.
+            </p>
+
+
+            <div class="order-number">
+
+                Nomor Pesanan:
+
+                <br><br>
+
+                <span id="orderNumber"></span>
+
+            </div>
+
+
+            <p>
+                Silakan menunggu informasi selanjutnya
+                dari admin.
+            </p>
+
+
+            <br>
+
+
+            <p>
+                Tuhan memberkati ❤️
+            </p>
+
+            <div style="
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    margin-top:25px;
+    text-align:center;
+    box-shadow:0 5px 18px rgba(0,0,0,0.07);
+">
+
+                <h3 style="
+        color:#315747;
+        margin-bottom:8px;
+    ">
+                    📞 Contact Person
+                </h3>
+
+                <p style="
+        color:#666;
+        font-size:14px;
+        line-height:1.5;
+    ">
+                    Ada pertanyaan atau ingin konfirmasi pesanan?
+                    <br>
+                    Silakan hubungi Admin melalui WhatsApp.
+                </p>
+
+                <p style="
+        font-weight:bold;
+        margin-top:12px;
+        font-size:16px;
+    ">
+                    0851-8338-1069
+                </p>
+
+                <a href="https://wa.me/6285183381069"
+                   target="_blank"
+                   style="
+            display:inline-block;
+            margin-top:15px;
+            background:#25D366;
+            color:white;
+            text-decoration:none;
+            padding:12px 22px;
+            border-radius:25px;
+            font-weight:bold;
+        ">
+                    💬 Chat Admin WhatsApp
+                </a>
+
+            </div>
+
+            <button class="main-button"
+                    onclick="backToOrder()"
+                    style="
+        margin-top:25px;
+        background:#315747;
+    ">
+                🛒 Kembali Order
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         FLOATING CART
+    ========================= -->
+
+    <div class="floating-cart"
+         onclick="scrollToCart()">
+
+        <strong>
+
+            🛒
+
+            <span id="floatingQuantity">
+                0
+            </span>
+
+            item
+
+        </strong>
+
+
+        <strong id="floatingTotal">
+            Rp0
+        </strong>
+
+    </div>
+
+
+
+    <script>
+
+
+        /* ==========================================
+        DATA MENU
+        ========================================== */
+
+        const menu = [
+
+        {
+        name: "Risol Mayo",
+        price: 4000
+        },
+
+        {
+        name: "Piscok",
+        price: 4000
+        },
+
+        {
+        name: "Nasi Ayam",
+        price: 20000
+        },
+
+        {
+        name: "Kaos Gereja",
+        price: 100000
+        }
+
+        ];
+
+
+        /* ==========================================
+        JUMLAH PESANAN
+        ========================================== */
+
+        let quantities = [
+        0,
+        0,
+        0,
+        0
+        ];
+
+
+
+        /* ==========================================
+        CEK PO WIB
+
+        SENIN-JUMAT  : BUKA
+        SABTU < 09:00 : BUKA
+        SABTU >=09:00 : TUTUP
+        MINGGU        : TUTUP
+        ========================================== */
+
+        function isPOOpen() {
+
+        const now = new Date();
+
+
+        const jakartaString =
+        now.toLocaleString(
+        "en-US",
+        {
+        timeZone: "Asia/Jakarta"
+        }
+        );
+
+
+        const jakartaDate =
+        new Date(jakartaString);
+
+
+        const day =
+        jakartaDate.getDay();
+
+
+        const hour =
+        jakartaDate.getHours();
+
+
+        const minute =
+        jakartaDate.getMinutes();
+
+
+
+        // MINGGU
+
+        if (day === 0) {
+
+        return false;
+
+        }
+
+
+
+        // SABTU
+
+        if (day === 6) {
+
+        if (
+        hour >= 9
+        ) {
+
+        return false;
+
+        }
+
+        }
+
+
+
+        return true;
+
+        }
+
+
+
+        /* ==========================================
+        TAMPILKAN STATUS PO
+        ========================================== */
+
+        function displayPOStatus() {
+
+        const status =
+        document.getElementById(
+        "poStatus"
+        );
+
+
+        if (isPOOpen()) {
+
+
+        status.innerHTML = `
+
+        <div class="po-open">
+
+        <h2>
+        🟢 PO SEDANG DIBUKA
+        </h2>
+
+        <p>
+        Silakan pilih menu
+        yang kamu inginkan.
+        </p>
+
+        </div>
+
+        `;
+
+
+        // Tampilkan kembali menu
+        // jika PO sudah buka lagi
+
+        document.getElementById(
+        "menuSection"
+        ).style.display = "block";
+
+
+        document.querySelector(
+        ".floating-cart"
+        ).style.display = "flex";
+
+
+        } else {
+
+
+        status.innerHTML = `
+
+        <div class="po-closed">
+
+        <h2>
+        🔒 PO SUDAH DITUTUP
+        </h2>
+
+        <p>
+        Maaf, kami sudah tutup PO.
+        </p>
+
+        <p>
+        Silahkan order di minggu berikutnya
+        atau chat admin WA:
+        <strong>
+        0851-XXXXXXXX
+        </strong>
+        </p>
+
+        <a
+        href="https://wa.me/62851XXXXXXXX"
+        target="_blank"
+        >
+        💬 CHAT ADMIN WA
+        </a>
+
+        </div>
+
+        `;
+
+
+        // Sembunyikan menu
+
+        document.getElementById(
+        "menuSection"
+        ).style.display = "none";
+
+
+        document.querySelector(
+        ".floating-cart"
+        ).style.display = "none";
+
+        }
+
+        }
+
+
+
+        /* ==========================================
+        TAMBAH / KURANG JUMLAH
+        ========================================== */
+
+        function changeQuantity(
+        index,
+        amount
+        ) {
+
+
+        // Jangan izinkan pesan
+        // kalau PO tutup
+
+        if (!isPOOpen()) {
+
+        alert(
+        "Maaf, PO sudah ditutup."
+        );
+
+        return;
+
+        }
+
+
+        quantities[index] += amount;
+
+
+        if (
+        quantities[index] < 0
+        ) {
+
+        quantities[index] = 0;
+
+        }
+
+
+        document.getElementById(
+        "quantity-" + index
+        ).textContent =
+        quantities[index];
+
+
+        updateCart();
+
+        }
+
+
+
+        /* ==========================================
+        FORMAT RUPIAH
+        ========================================== */
+
+        function formatRupiah(
+        number
+        ) {
+
+        return new Intl.NumberFormat(
+        "id-ID",
+        {
+        style: "currency",
+        currency: "IDR",
+        maximumFractionDigits: 0
+        }
+        ).format(number);
+
+        }
+
+
+
+        /* ==========================================
+        UPDATE KERANJANG
+        ========================================== */
+
+        function updateCart() {
+
+        const cartItems =
+        document.getElementById(
+        "cartItems"
+        );
+
+
+        let total = 0;
+
+        let totalQuantity = 0;
+
+        let html = "";
+
+
+
+        for (
+        let i = 0;
+        i < menu.length;
+        i++
+        ) {
+
+
+        if (
+        quantities[i] > 0
+        ) {
+
+
+        const subtotal =
+        menu[i].price *
+        quantities[i];
+
+
+        total += subtotal;
+
+
+        totalQuantity +=
+        quantities[i];
+
+
+        let name =
+        menu[i].name;
+
+
+
+        // Jika kaos
+
+        if (i === 3) {
+
+        const size =
+        document.getElementById(
+        "shirtSize"
+        ).value;
+
+
+        name +=
+        " (Ukuran " +
+        size +
+        ")";
+
+        }
+
+
+
+        html += `
+
+        <div class="cart-item">
+
+        <span>
+        ${name}
+        ×
+        ${quantities[i]}
+        </span>
+
+        <strong>
+        ${formatRupiah(subtotal)}
+        </strong>
+
+        </div>
+
+        `;
+
+        }
+
+        }
+
+
+
+        if (
+        html === ""
+        ) {
+
+        html = `
+
+        <p style="color:#888;">
+        Belum ada pesanan.
+        </p>
+
+        `;
+
+        }
+
+
+
+        cartItems.innerHTML =
+        html;
+
+
+
+        document.getElementById(
+        "cartTotal"
+        ).textContent =
+        formatRupiah(total);
+
+
+
+        document.getElementById(
+        "floatingQuantity"
+        ).textContent =
+        totalQuantity;
+
+
+
+        document.getElementById(
+        "floatingTotal"
+        ).textContent =
+        formatRupiah(total);
+
+        }
+
+
+
+        /* ==========================================
+        BUKA CHECKOUT
+        ========================================== */
+
+        function openCheckout() {
+
+
+        if (!isPOOpen()) {
+
+        alert(
+        "Maaf, PO sudah ditutup."
+        );
+
+        return;
+
+        }
+
+
+
+        const totalQuantity =
+        quantities.reduce(
+        (sum, value) =>
+        sum + value,
+        0
+        );
+
+
+
+        if (
+        totalQuantity === 0
+        ) {
+
+        alert(
+        "Silakan pilih minimal satu menu."
+        );
+
+        return;
+
+        }
+
+
+
+        document.getElementById(
+        "menuSection"
+        ).style.display =
+        "none";
+
+
+
+        document.getElementById(
+        "checkoutSection"
+        ).style.display =
+        "block";
+
+
+
+        updateCheckout();
+
+
+
+        window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+        });
+
+        }
+
+
+
+        /* ==========================================
+        CHECKOUT RINCIAN
+        ========================================== */
+
+        function updateCheckout() {
+
+        const checkoutItems =
+        document.getElementById(
+        "checkoutItems"
+        );
+
+
+        let total = 0;
+
+        let html = "";
+
+
+
+        for (
+        let i = 0;
+        i < menu.length;
+        i++
+        ) {
+
+
+        if (
+        quantities[i] > 0
+        ) {
+
+
+        const subtotal =
+        menu[i].price *
+        quantities[i];
+
+
+        total += subtotal;
+
+
+        let name =
+        menu[i].name;
+
+
+
+        if (
+        i === 3
+        ) {
+
+        const size =
+        document.getElementById(
+        "shirtSize"
+        ).value;
+
+
+        name +=
+        " (Ukuran " +
+        size +
+        ")";
+
+        }
+
+
+
+        html += `
+
+        <div
+        style="
+        display:flex;
+        justify-content:space-between;
+        padding:10px 0;
+        border-bottom:1px solid #eee;
+        "
+        >
+
+        <span>
+        ${name}
+        ×
+        ${quantities[i]}
+        </span>
+
+        <strong>
+        ${formatRupiah(subtotal)}
+        </strong>
+
+        </div>
+
+        `;
+
+        }
+
+        }
+
+
+
+        checkoutItems.innerHTML =
+        html;
+
+
+
+        document.getElementById(
+        "checkoutTotal"
+        ).textContent =
+        formatRupiah(total);
+
+        }
+
+
+
+        /* ==========================================
+        KEMBALI KE MENU
+        ========================================== */
+
+        function backToMenu() {
+
+        document.getElementById(
+        "checkoutSection"
+        ).style.display =
+        "none";
+
+
+        document.getElementById(
+        "menuSection"
+        ).style.display =
+        "block";
+
+
+        window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+        });
+
+        }
+
+
+
+        /* ==========================================
+        SUBMIT PESANAN
+        ========================================== */
+
+        async function submitOrder() {
+
+
+        // Cek kembali status PO
+
+        if (!isPOOpen()) {
+
+        alert(
+        "Maaf, PO sudah ditutup."
+        );
+
+        return;
+
+        }
+
+
+
+        const name =
+        document.getElementById(
+        "customerName"
+        ).value.trim();
+
+
+
+        const phone =
+        document.getElementById(
+        "customerPhone"
+        ).value.trim();
+
+
+
+        if (
+        name === ""
+        ) {
+
+        alert(
+        "Silakan masukkan nama."
+        );
+
+        return;
+
+        }
+
+
+
+        if (
+        phone === ""
+        ) {
+
+        alert(
+        "Silakan masukkan nomor WhatsApp."
+        );
+
+        return;
+
+        }
+
+
+
+        /* =========================
+        SIAPKAN ITEM PESANAN
+        ========================= */
+
+        const items = [];
+
+        let total = 0;
+
+
+
+        for (
+        let i = 0;
+        i < menu.length;
+        i++
+        ) {
+
+
+        if (
+        quantities[i] > 0
+        ) {
+
+
+        let itemName =
+        menu[i].name;
+
+
+
+        // Jika kaos
+        // tambahkan ukuran
+
+        if (
+        i === 3
+        ) {
+
+        const size =
+        document.getElementById(
+        "shirtSize"
+        ).value;
+
+
+        itemName +=
+        " (Ukuran " +
+        size +
+        ")";
+
+        }
+
+
+
+        const subtotal =
+        menu[i].price *
+        quantities[i];
+
+
+        total += subtotal;
+
+
+
+        items.push({
+
+        name: itemName,
+
+        price:
+        menu[i].price,
+
+        quantity:
+        quantities[i],
+
+        subtotal:
+        subtotal
+
+        });
+
+        }
+
+        }
+
+
+
+        /* =========================
+        CATATAN PESANAN
+        ========================= */
+
+        const noteElement =
+        document.getElementById(
+        "customerNote"
+        );
+
+
+        const note =
+        noteElement
+        ? noteElement.value.trim()
+        : "";
+
+
+
+        /* =========================
+        KIRIM KE SERVER
+        ========================= */
+
+        try {
+
+
+        const response =
+        await fetch(
+        "/api/orders",
+        {
+
+        method: "POST",
+
+        headers: {
+
+        "Content-Type":
+        "application/json"
+
+        },
+
+        body:
+        JSON.stringify({
+
+        customer_name:
+        name,
+
+        whatsapp:
+        phone,
+
+        items:
+        items,
+
+        total:
+        total,
+
+        note:
+        note
+
+        })
+
+        }
+        );
+
+
+
+        const result =
+        await response.json();
+
+
+
+        if (
+        !response.ok ||
+        !result.success
+        ) {
+
+        alert(
+
+        result.message ||
+        "Gagal mengirim pesanan."
+
+        );
+
+        return;
+
+        }
+
+
+
+        /* =========================
+        NOMOR ORDER DARI SERVER
+        ========================= */
+
+        const orderNumber =
+        result.order_number;
+
+        sessionStorage.setItem(
+    "orderSuccess",
+    "true"
+);
+
+sessionStorage.setItem(
+    "lastOrderNumber",
+    orderNumber
+);
+
+
+
+        document.getElementById(
+        "orderNumber"
+        ).textContent =
+        orderNumber;
+
+
+
+        document.getElementById(
+        "checkoutSection"
+        ).style.display =
+        "none";
+
+
+
+        document.getElementById(
+        "thankYouSection"
+        ).style.display =
+        "block";
+
+
+
+        document.querySelector(
+        ".floating-cart"
+        ).style.display =
+        "none";
+
+
+
+        window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+        });
+
+
+        } catch (error) {
+
+
+        console.error(
+        "Gagal mengirim pesanan:",
+        error
+        );
+
+
+        alert(
+        "Terjadi kesalahan saat mengirim pesanan. Silakan coba lagi."
+        );
+
+        }
+
+        }
+
+        /* ==========================================
+KEMBALI ORDER
+========================================== */
+
+function backToOrder() {
+
+    // Hapus tanda bahwa order sebelumnya sudah selesai
+    sessionStorage.removeItem("orderSuccess");
+    sessionStorage.removeItem("lastOrderNumber");
+
+    // Kosongkan keranjang untuk order baru
+    quantities = [0, 0, 0, 0];
+
+    // Sembunyikan halaman terima kasih
+    document.getElementById(
+        "thankYouSection"
+    ).style.display = "none";
+
+    // Pastikan checkout tersembunyi
+    document.getElementById(
+        "checkoutSection"
+    ).style.display = "none";
+
+    // Tampilkan kembali menu
+    document.getElementById(
+        "menuSection"
+    ).style.display = "block";
+
+    // Tampilkan kembali floating cart
+    document.querySelector(
+        ".floating-cart"
+    ).style.display = "flex";
+
+    // Kosongkan data pemesan
+    document.getElementById(
+        "customerName"
+    ).value = "";
+
+    document.getElementById(
+        "customerPhone"
+    ).value = "";
+
+    document.getElementById(
+        "customerNote"
+    ).value = "";
+
+    // Reset angka jumlah barang
+    for (
+        let i = 0;
+        i < quantities.length;
+        i++
+    ) {
+
+        document.getElementById(
+            "quantity-" + i
+        ).textContent = "0";
+
+    }
+
+    // Perbarui keranjang
+    updateCart();
+
+    // Kembali ke bagian atas
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+        /* ==========================================
+        SCROLL KE KERANJANG
+        ========================================== */
+
+        function scrollToCart() {
+
+
+        if (
+        !isPOOpen()
+        ) {
+
+        return;
+
+        }
+
+
+
+        document.querySelector(
+        ".cart"
+        ).scrollIntoView({
+
+        behavior: "smooth"
+
+        });
+
+        }
+
+
+
+        /* ==========================================
+        UPDATE SAAT UKURAN KAOS BERUBAH
+        ========================================== */
+
+        document.getElementById(
+        "shirtSize"
+        ).addEventListener(
+
+        "change",
+
+        function () {
+
+        updateCart();
+
+        updateCheckout();
+
+        }
+
+        );
+
+
+
+        /* ==========================================
+        CEK STATUS SAAT WEBSITE DIBUKA
+        ========================================== */
+
+        displayPOStatus();
+
+        updateCart();
+
+
+
+        /* ==========================================
+        CEK STATUS PO SETIAP 30 DETIK
+        ========================================== */
+
+        setInterval(
+
+        displayPOStatus,
+
+        30000
+
+        );
+
+        /* ==========================================
+KEMBALIKAN KE HALAMAN TERIMA KASIH
+JIKA ORDER SUDAH BERHASIL
+========================================== */
+
+const orderSuccess =
+sessionStorage.getItem("orderSuccess");
+
+const lastOrderNumber =
+sessionStorage.getItem("lastOrderNumber");
+
+
+if (
+orderSuccess === "true" &&
+lastOrderNumber
+) {
+
+document.getElementById(
+"menuSection"
+).style.display = "none";
+
+document.getElementById(
+"checkoutSection"
+).style.display = "none";
+
+document.getElementById(
+"thankYouSection"
+).style.display = "block";
+
+document.querySelector(
+".floating-cart"
+).style.display = "none";
+
+document.getElementById(
+"orderNumber"
+).textContent =
+lastOrderNumber;
+
+}
+
+    </script>
+
+
+</body>
+
+</html>
